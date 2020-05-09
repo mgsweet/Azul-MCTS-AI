@@ -36,21 +36,21 @@ class GUIGameDisplayer(GameDisplayer):
         self.center_token = True
         self.root.title("AZUL assignment ------ COMP90054 AI Planning for Autononmy")
 
-        self.root.tk.call('wm', 'iconphoto', self.root._w, tkinter.PhotoImage(file='resources/azul_bpj_icon.png'))
+        self.root.tk.call('wm', 'iconphoto', self.root._w, tkinter.PhotoImage(file='resources/azul_bpj_icon.gif'))
         self.root.geometry("1300x700")
         # self.root.resizable(width=False, height=False)
 
         self.tile_images = []
-        self.tile_images.append(tkinter.PhotoImage(file="resources/blue_tile_mini.png"))
-        self.tile_images.append(tkinter.PhotoImage(file="resources/yellow_tile_mini.png"))
-        self.tile_images.append(tkinter.PhotoImage(file="resources/red_tile_mini.png"))
-        self.tile_images.append(tkinter.PhotoImage(file="resources/black_tile_mini.png"))
-        self.tile_images.append(tkinter.PhotoImage(file="resources/white_tile_mini.png"))
-        self.tile_images.append(tkinter.PhotoImage(file="resources/start_tile_mini.png"))
-        self.tile_images.append(tkinter.PhotoImage(file="resources/penalty_tile_mini.png"))
+        self.tile_images.append(tkinter.PhotoImage(file="resources/blue_tile_mini.gif"))
+        self.tile_images.append(tkinter.PhotoImage(file="resources/yellow_tile_mini.gif"))
+        self.tile_images.append(tkinter.PhotoImage(file="resources/red_tile_mini.gif"))
+        self.tile_images.append(tkinter.PhotoImage(file="resources/black_tile_mini.gif"))
+        self.tile_images.append(tkinter.PhotoImage(file="resources/white_tile_mini.gif"))
+        self.tile_images.append(tkinter.PhotoImage(file="resources/start_tile_mini.gif"))
+        self.tile_images.append(tkinter.PhotoImage(file="resources/penalty_tile_mini.gif"))
         
-        self.player_borad_img = tkinter.PhotoImage(file="resources/player_board_mini.png")
-        self.m_img = tkinter.PhotoImage(file="resources/multiplication_mini.png")
+        self.player_borad_img = tkinter.PhotoImage(file="resources/player_board_mini.gif")
+        self.m_img = tkinter.PhotoImage(file="resources/multiplication_mini.gif")
 
 
         #factory
