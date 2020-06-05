@@ -40,6 +40,8 @@ class MonteCarloTreeSearch:
     def FindNextMove(self, first_q_func, second_q_func):
         """Find the best move using UTC
 
+        Use two Q function to break the tie to select a better move.
+
         Args:
             first_q_func: The Q function used to calculate UTB and to select move
             second_q_func: The Q function used to break the tie
@@ -47,13 +49,12 @@ class MonteCarloTreeSearch:
         Returns:
              The best move with the highest scores
         """
-        # test_count = 0
         begin_time = time.time()
         while time.time() - begin_time < self.time_limit:
-            # test_count += 1
             # Select the leaf node with the higher UCB1 value
             expand_node = self.Selection(self.root, first_q_func)
-            # Expand the node, only expand if it is visited before.
+            # Expand the node, only expand if it is visited more than one times before.
+            # This encourage breath search one more time instead of expanding nodes.
             # If the node is the end of the game, use the expand_node to simulate.
             child = expand_node
             # A higher visited_count would lead to more simulation. Not enough computing power provided!
@@ -64,11 +65,10 @@ class MonteCarloTreeSearch:
                     child = self.Choose(children)
             # Simulation
             rewards, move_count = self.Simulation(child)
+            # Back propagation, backup both our reward and our opponent's reward (Self training)
             self.Backup(child, rewards, move_count, self.discount_factor)
         # Find the best move with the highest win score
-        # print(test_count)
         # Choose the move that can bring the max Q value
-
         best_child = self._ChooseBestChildWithTieBreaker(self.root.children, first_q_func, second_q_func)
         return best_child.state.pre_move
 
