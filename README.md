@@ -1,15 +1,35 @@
-<!-- # AZUL
-This repository contains a framework to support policy learning for the boardgame AZUL, published by Plan B Games. The purpose of this framework is to allow students to implement algorithms for learning AI players for the game and evaluate the performance of these players against human/other AI players. 
+# MCTS based AZUL AI Agent
 
-Students making use of the framework will need to create a Player subclass for their AI player that selects moves on the basis of a learned policy, and write code to learn their policy on the basis of repeated simulations of the game.
+An AI agent that using Monte Carlo Tree Search to master the tile-laying game of Azul.
 
-Some information about the game:
-- https://en.wikipedia.org/wiki/Azul_(board_game)
-- https://www.ultraboardgames.com/azul/game-rules.php
-- https://boardgamegeek.com/boardgame/230802/azul
-- https://www.planbgames.com/en/news/azul-c16.html -->
+## Our Best Agent
 
-# AZUL GUI
+We ranked 6th in the last tournament and 2nd in the final playoffs. Our win rate in the first eight is the worst. However, our game score is high. In the final playoff, we beat the player who ranked first in the final tournament. 
+
+## Usage
+
+To run our best agent and the naive player:
+
+```
+python runner.py -r Diamond_Three.myPlayer -b  naive_player
+```
+
+We also provide some other agent, you can find them in `players/Diamond_Three/`.
+
+## More Details
+
+Check our assignment report for more details: [report](doc/report.pdf)
+
+## Future Work
+
+- Use some heuristic functions like the one here https://cmath-school.com/blog/azul-ai to do pruning or make a more accurate future reward function.
+- We leave many `TODO` in our code, where we think can be improved in the future.
+
+---
+
+
+
+## Assignment Specification
 
 This repository contains a framework to support developing autonomous agents for the boardgame AZUL, published by Plan B Games. The game frame is forked from [Michelle Blom](https://github.com/michelleblom)'s repository, and GUI is developed by [Guang Hu](https://github.com/guanghuhappysf128) and  [Ruihan Zhang](https://github.com/zhangrh93). The code is in Python 3.
 
@@ -21,7 +41,7 @@ Some information about the game:
 - https://www.planbgames.com/en/news/azul-c16.html
 - https://github.com/michelleblom/AZUL
 
-# Setting up the environment
+### Setting up the environment
 
 Python 3 is required, and library tkinter should be installed along with python 3.
 
@@ -34,7 +54,7 @@ If have both python 2 and python 3 installed, you might need to use following co
 pip3 install numpy tqdm func_timeout
 ```
 
-# How to run it?
+### How to run it?
 
 The code example can be run with command:
 ```bash
@@ -51,8 +71,6 @@ Other command line option can be viewed with argument: ```-h``` or ```--help```
 
 When a game ends, the GUI will pause to allow user selecting each states on listbox (right side of the window), and it will change accordingly. And replay file will be generated once the GUI window is closed.
 
-
-
 ***For Debug purpose:***
 ***Please use the Example.ipynb to start***
 
@@ -62,7 +80,6 @@ When a game ends, the GUI will pause to allow user selecting each states on list
 - replay system
 - GUI displayer (allow switch)
 - delay time setting
-= 
 
 **class and parameters**
 
