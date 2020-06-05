@@ -6,6 +6,8 @@ An AI agent that using Monte Carlo Tree Search to master the tile-laying game of
 
 We ranked 6th in the last tournament and 2nd in the final playoffs. Our win rate in the first eight is the worst. However, our game score is high. In the final playoff, we beat the player who ranked first in the final tournament. 
 
+
+
 ## Usage
 
 To run our best agent and the naive player:
@@ -16,18 +18,22 @@ python runner.py -r Diamond_Three.myPlayer -b  naive_player
 
 We also provide some other agent, you can find them in `players/Diamond_Three/`.
 
+
+
 ## More Details
 
 Check our assignment report for more details: [report](doc/report.pdf)
+
+
 
 ## Future Work
 
 - Use some heuristic functions like the one here https://cmath-school.com/blog/azul-ai to do pruning or make a more accurate future reward function.
 - We leave many `TODO` in our code, where we think can be improved in the future.
 
+
+
 ---
-
-
 
 ## Assignment Specification
 
