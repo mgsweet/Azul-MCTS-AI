@@ -4,7 +4,7 @@ An AI agent that using Monte Carlo Tree Search to master the tile-laying game of
 
 ## Our Best Agent
 
-We ranked 6th in the last tournament and 2nd in the final playoffs. Our win rate in the first eight is the worst. However, our game score is high. In the final playoff, we beat the player who ranked first in the final tournament. 
+We ranked **6th** in the last tournament and **2nd** in the final playoffs. Our win rate in the first eight is the worst. However, our game score is high. In the final playoff, **we beat the player who ranked first in the final tournament.** 
 
 
 
