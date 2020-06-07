@@ -4,9 +4,20 @@ An AI agent that using Monte Carlo Tree Search to master the tile-laying game of
 
 ## Our Best Agent
 
-We ranked **6th** in the last tournament and **2nd** in the final playoff. Our win rate in the first eight is the worst. However, our game score is high. In the final playoff, **we beat the player who ranked first in the final tournament.** 
+We ranked **6th** in the last tournament and **2nd** in the final playoff. Our win rate in the first eight is the worst, and our total score is the best. In the final playoff, **we beat *404Error* who ranked first in the final tournament.** 
 
+### final_competition-05-Jun-2020-04-40-18
 
+| Position | Team               | Win | Tie | Lost | TotalGame | TotalScore | FAILED | FinalScore |
+|----------|--------------------|-----|-----|------|-----------|------------|--------|------------|
+| 1        | 404Error           | 240 | 1   | 27   | 268       | 14755      | 0      | 26775      |
+| 2        | AlphaAzul          | 230 | 4   | 34   | 268       | 14011      | 0      | 25591      |
+| 3        | Amazing_Azul       | 192 | 3   | 73   | 268       | 14703      | 0      | 24363      |
+| 4        | StaffTeamEasy      | 201 | 3   | 64   | 268       | 14163      | 0      | 24273      |
+| 5        | thisisgroup1       | 180 | 4   | 84   | 268       | 14692      | 0      | 23772      |
+| 6        | **Diamond_Three**  | 156 | 8   | 104  | 268       | **15466**  | 0      | 23426      |
+| 7        | UnionOfThreeCities | 212 | 6   | 50   | 268       | 12662      | 0      | 23382      |
+| 8        | AutoChess_Queen    | 203 | 7   | 58   | 268       | 13055      | 0      | 23345      |
 
 ## Usage
 
@@ -16,9 +27,7 @@ To run our best agent and the naive player:
 python runner.py -r Diamond_Three.myPlayer -b  naive_player
 ```
 
-We also provide some other agent, you can find them in `players/Diamond_Three/`.
-
-
+We also provide some other agents, you can find them in `players/Diamond_Three/`.
 
 ## More Details
 
