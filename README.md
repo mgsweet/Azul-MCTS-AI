@@ -54,7 +54,6 @@ To run our best agent and the naive player:
 
 ```
 python runner.py -r Diamond_Three.myPlayer -b  naive_player
-
 ```
 We also provide some other agents, you can find them in `players/Diamond_Three/`.
 
