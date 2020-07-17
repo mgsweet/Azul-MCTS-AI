@@ -37,27 +37,32 @@ https://www.youtube.com/watch?v=4tPvgutIbvI
 
 ### Setting up the environment
 
-Python 3 is required, and library tkinter should be installed along with python 3.
+The code uses three library that required to be installed: ```numpy```, ```func_timeout```, ```tqdm```, which can be done with the following commands:
 
-The code uses three library that required to be installed: ```numpy```,```func_timeout```,```tqdm```, which can be done with the following command:
+```shell
+pip3 install -r requirements.txt 
+```
+
+or
+
 ```bash
 pip install numpy tqdm func_timeout
 ```
 If have both python 2 and python 3 installed, you might need to use following command:
-```bash
+```shell
 pip3 install numpy tqdm func_timeout
 ```
 
 ### How to run our agent
 
-To run our best agent and the naive player:
+To run our best agent with the naive player:
 
 ```
 python runner.py -r Diamond_Three.myPlayer -b  naive_player
 ```
 We also provide some other agents, you can find them in `players/Diamond_Three/`.
 
-### How to run the original game provided by the teaching team?
+### How to run the original game provided by the teaching team
 
 The code example can be run with command:
 ```bash

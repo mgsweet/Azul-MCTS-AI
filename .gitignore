@@ -139,3 +139,6 @@ dmypy.json
 
 *.pyc
 __pycache__/
+
+### ENV for python
+env/
